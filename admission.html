@@ -11,7 +11,7 @@
 </head>
 <style>
     .outer-box {
-        background-color: rgb(68, 104, 189);
+        background-color: lightseagreen;
         width: 60vw;
         height: 150vh;
 
@@ -91,124 +91,131 @@
 </style>
 
 <body>
+    <!--Admission Form-->
     <h1 style="text-align: center; margin-left: 4%;  ">Admission Form</h1>
     <fieldset style="width:50%; height:auto; background-color: gray;margin-left: 300px;">
         <div class="outer-box">
             <div class="first-box">
-               <img style=" float: left" src="./assets/logo-three.jpg" alt="" height="170px" width="170px">
+                <!--Admission Form-->
+                <img style=" float: left" src="./Myhtmlpage/assets/logo-three.jpg" alt="" height="170px" width="170px">
                 <h1 style="text-align:center;">Shiksha Academy</h1>
-                <h4 style="text-align: center;">Your Success is our Achievement.</h4>
+                <h4 style="text-align: center;">Your Success is our Achievement..</h4>
                 <h2 style="text-align: center;"> Educational & IT Training Academy </h2>
 
             </div>
 
 
             <form>
+                <!--Personal details-->
                 <div class="chiccu-section ">
 
 
                     <div class="aadmi">
-                        <fieldset>
-                            <legend style="font-size:2em; font-family: 'Times New Roman', Times, serif;"> Personal
-                                Details
-                            </legend>
-                            <label class="lable-style"> Student Name: </label> 
-                            &emsp;
-                            <input  type="text" class="text-about" />
-                            <br>
-                            <br>
-                            <label class="lable-style">Father's Name: </label>&emsp; 
-                            <input type="text" class="text-about" />
-                            &emsp; &emsp;
-                            <label class="lable-style"> Mother's Name:</label> &emsp;
-                            <input type="text" class="text-about" />
-                            <br>
+                        <br>
+                        <br>
+                        <legend style="font-size:2em; font-family: 'Times New Roman', Times, serif;"> Personal
+                            Details
+                        </legend>
+                        <label class="lable-style"> Student Name: </label>
+                        &emsp;
+                        <input type="text" class="text-about" />
+                        <br>
+                        <br>
+                        <label class="lable-style">Father's Name: </label>&emsp;
+                        <input type="text" class="text-about" />
+                        &emsp; &emsp;
+                        <label class="lable-style"> Mother's Name:</label> &emsp;
+                        <input type="text" class="text-about" />
+                        <br>
 
-                            <label class="lable-style"> Birth Date:</label>&emsp;&emsp;&emsp; 
-                            <input type="date" class="text-about" />
-                            &emsp;&emsp; &emsp; &emsp;
-                            <label class="lable-style">Gender:</label>
-                            &emsp;&emsp; &emsp;
-                            <label class="lable-style">Male</label>
-                            <input type="radio" class="input_box" value="Male" name="two" />&emsp;
-                            <label class="lable-style">Femlale</label>
-                            <input type="radio" class="input_box" value="Femlale" name="two" />
-
-                        </fieldset>
-
-
-                        <Fieldset>
-
-                            <legend style="font-size:2em; font-family: 'Times New Roman', Times, serif;"> Current
-                                Address</legend>
-
-                            <label class="lable-style">City: </label>&emsp;&emsp;
-                            <input type="text" class="text-about" />
-                            <br>
-                            <br>
-                            <label class="lable-style">Region:</label>&emsp;
-                            <input type="text" class="text-about" />
-                            <br>
-                            <br>
-                            <label for="country" class="lable-style">Country:</label>&emsp;
-                            <select id="country" class="text-about">
-                                <option>India</option>
-                                <option>Japan</option>
-                                <option>Nepal</option>
-                            </select>
+                        <label class="lable-style"> Birth Date:</label>&emsp;&emsp;&emsp;
+                        <input type="date" class="text-about" />
+                        &emsp;&emsp; &emsp; &emsp;
+                        <label class="lable-style">Gender:</label>
+                        &emsp;&emsp; &emsp;
+                        <label class="lable-style">Male</label>
+                        <input type="radio" class="input_box" value="Male" name="two" />&emsp;
+                        <label class="lable-style">Femlale</label>
+                        <input type="radio" class="input_box" value="Femlale" name="two" />
 
 
-                        </fieldset>
+                        <br>
 
-                        <Fieldset>
+                        <br>
+                        <!--Current Address-->
+                        <legend style="font-size:2em; font-family: 'Times New Roman', Times, serif;"> Current
+                            Address</legend>
 
-                            <legend style="font-size:2em; font-family: 'Times New Roman', Times, serif;">Other
-                                Details</legend>
+                        <label class="lable-style">City: </label>&emsp;&emsp;
+                        <input type="text" class="text-about" />
+                        <br>
+                        <br>
+                        <label class="lable-style">Region:</label>&emsp;
+                        <input type="text" class="text-about" />
+                        <br>
+                        <br>
+                        <label for="country" class="lable-style">Country:</label>&emsp;
+                        <select id="country" class="text-about">
+                            <option>India</option>
+                            <option>Japan</option>
+                            <option>Nepal</option>
+                        </select>
 
-                            <label class="lable-style">Religion: </label>&emsp;&emsp;
-                            <input type="text" class="text-about" />
-                            &emsp;
-                            &emsp;
-                            <label class="lable-style">Phone Number:</label>&emsp;
-                            <input type="number" class="text-about" />
 
-                            <br>
-                            <br>
-                            <label class="lable-style">Nationality: </label>&emsp;
-                            <input type="text" class="text-about" />
-                            &emsp;&emsp;
-                            <label class="lable-style">E-mail Address:</label>&emsp;
-                            <input type="email" class="text-about" />
-                            <br>
+                        <br>
 
-                        </fieldset>
+                        <br>
+                        <!--Other details-->
+                        <legend style="font-size:2em; font-family: 'Times New Roman', Times, serif;">Other
+                            Details</legend>
 
-                        <fieldset>
-                            <legend style="font-size:2em; font-family: 'Times New Roman', Times, serif;">EDUCATION
-                            </legend>
-                            <label for="EDUCATION" class="lable-style">Education</label>&emsp;
-                            <select id="EDUCATION" class="text-about">
-                                <option>10th</option>
-                                <option>12th</option>
-                            </select>
+                        <label class="lable-style">Religion: </label>&emsp;&emsp;
+                        <input type="text" class="text-about" />
+                        &emsp;
+                        &emsp;
+                        <label class="lable-style">Phone Number:</label>&emsp;
+                        <input type="number" class="text-about" />
 
-                        </fieldset>
+                        <br>
+                        <br>
+                        <label class="lable-style">Nationality: </label>&emsp;
+                        <input type="text" class="text-about" />
+                        &emsp;&emsp;
+                        <label class="lable-style">E-mail Address:</label>&emsp;
+                        <input type="email" class="text-about" />
+                        <br>
 
-                        <fieldset>
-                            <legend style="font-size:2em; font-family: 'Times New Roman', Times, serif;">Enroll course
-                                for </legend>
 
-                            <label class="lable-style">B.E</label>
-                            <input type="radio" class="text-about" value="B.E" name="two" />
-                            <label class="lable-style">B.Tech</label>
-                            <input type="radio" class="text-about" value="B.Tech" name="two" />
+                        <br>
+                        <br>
+                        <!--Education-->
+                        <legend style="font-size:2em; font-family: 'Times New Roman', Times, serif;">Education
+                        </legend>
+                        <label for="EDUCATION" class="lable-style">Education</label>&emsp;
+                        <select id="EDUCATION" class="text-about">
+                            <option>10th</option>
+                            <option>12th</option>
+                        </select>
 
-                        </fieldset>
+
+                        <br>
+                        <br>
+                        <!--Enroll course for-->
+                        <legend style="font-size:2em; font-family: 'Times New Roman', Times, serif;">Enroll course
+                            for </legend>
+
+                        <label class="lable-style">B.E</label>
+                        <input type="radio" class="text-about" value="B.E" name="two" />
+                        <label class="lable-style">B.Tech</label>
+                        <input type="radio" class="text-about" value="B.Tech" name="two" />
+
+
                         <br>
                         <br>
                         <br>
+                        <!--Submit-->
                         <button
-                            style=" text-align: center; font-size:2em; font-family: 'Times New Roman', Times, serif; margin-left:43%;  background-color: rgb(68, 104, 189);">Submit</button>
+                            style=" text-align: center; font-size:2em; font-family: 'Times New Roman', Times, serif; margin-left:43%;  background-color: rgb(4, 115, 110);">Submit</button>
 
                         <br>
                         <br>

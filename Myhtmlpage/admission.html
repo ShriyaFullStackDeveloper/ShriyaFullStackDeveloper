@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    .outer-box {
+        background-color: lightseagreen;
+        width: 60vw;
+        height: 150vh;
+
+
+
+    }
+
+    .first-box {
+        height: 18%;
+        width: 100%;
+        background-color: gray;
+        font-size: 20px;
+
+
+    }
+
+    .Academy {
+        font-size: 2em;
+        color: black;
+        text-align: center;
+    }
+
+    .chiccu-section {
+        margin-left: 4px;
+    }
+
+    .text-about {
+        font-size: 1em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: black;
+        height: 30px;
+        width: 200px;
+        margin: 0%;
+    }
+
+    .input_box {
+        width: 22px;
+        height: 22px;
+        margin: 10px;
+        background-color: blue;
+    }
+
+    .aadmi {
+        margin-bottom: 50px;
+    }
+
+    .qoute {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        text-align: center;
+
+
+    }
+
+    .input-field {
+        width: 300px;
+        height: 44px;
+        background-color: gainsboro;
+
+    }
+
+    .msg {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5em;
+        text-align: center;
+
+    }
+
+    .lable-style {
+
+        font-family: 'Times New Roman', Times, serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+
+    }
+    
+</style>
+
+<body>
+    <!--Admission Form-->
+    <h1 style="text-align: center; margin-left: 4%;  ">Admission Form</h1>
+    <fieldset style="width:50%; height:auto; background-color: gray;margin-left: 300px;">
+        <div class="outer-box">
+            <div class="first-box">
+                <!--Admission Form-->
+                <img style=" float: left; margin-bottom:2px;"  src="../Myhtmlpage/assets/logo-three.jpg" alt="" height="170px" width="170px">
+                <h1 style="text-align:center;">Shiksha Academy</h1>
+                <h4 style="text-align: center;">Your Success is our Achievement..</h4>
+                <h2 style="text-align: center;"> Educational & IT Training Academy </h2>
+
+            </div>
+
+
+            <form>
+                <!--Personal details-->
+                <div class="chiccu-section ">
+
+
+                    <div class="aadmi">
+                        <br>
+                        
+                        <legend style="font-size:2em; font-family: 'Times New Roman', Times, serif;"> Personal
+                            Details
+                        </legend>
+                        <label class="lable-style"> Student Name: </label>
+                        &emsp;
+                        <input type="text" class="text-about" />
+                        <br>
+                        <br>
+                        <label class="lable-style">Father's Name: </label>&emsp;
+                        <input type="text" class="text-about" />
+                        &emsp; &emsp;
+                        <label class="lable-style"> Mother's Name:</label> &emsp;
+                        <input type="text" class="text-about" />
+                        <br>
+
+                        <label class="lable-style"> Birth Date:</label>&emsp;&emsp;&emsp;
+                        <input type="date" class="text-about" />
+                        &emsp;&emsp; &emsp; &emsp;
+                        <label class="lable-style">Gender:</label>
+                        &emsp;&emsp; &emsp;
+                        <label class="lable-style">Male</label>
+                        <input type="radio" class="input_box" value="Male" name="two" />&emsp;
+                        <label class="lable-style">Femlale</label>
+                        <input type="radio" class="input_box" value="Femlale" name="two" />
+
+
+                        <br>
+
+                        <br>
+                        <!--Current Address-->
+                        <legend style="font-size:2em; font-family: 'Times New Roman', Times, serif;"> Current
+                            Address</legend>
+
+                        <label class="lable-style">City: </label>&emsp;&emsp;
+                        <input type="text" class="text-about" />
+                        <br>
+                        <br>
+                        <label class="lable-style">Region:</label>&emsp;
+                        <input type="text" class="text-about" />
+                        <br>
+                        <br>
+                        <label for="country" class="lable-style">Country:</label>&emsp;
+                        <select id="country" class="text-about">
+                            <option>India</option>
+                            <option>Japan</option>
+                            <option>Nepal</option>
+                        </select>
+
+
+                        <br>
+
+                        <br>
+                        <!--Other details-->
+                        <legend style="font-size:2em; font-family: 'Times New Roman', Times, serif;">Other
+                            Details</legend>
+
+                        <label class="lable-style">Religion: </label>&emsp;&emsp;
+                        <input type="text" class="text-about" />
+                        &emsp;
+                        &emsp;
+                        <label class="lable-style">Phone Number:</label>&emsp;
+                        <input type="number" class="text-about" />
+
+                        <br>
+                        <br>
+                        <label class="lable-style">Nationality: </label>&emsp;
+                        <input type="text" class="text-about" />
+                        &emsp;&emsp;
+                        <label class="lable-style">E-mail Address:</label>&emsp;
+                        <input type="email" class="text-about" />
+                        <br>
+
+
+                        <br>
+                        
+                        <!--Education-->
+                        <legend style="font-size:2em; font-family: 'Times New Roman', Times, serif;">Education
+                        </legend>
+                        <label for="EDUCATION" class="lable-style">Education</label>&emsp;
+                        <select id="EDUCATION" class="text-about">
+                            <option>10th</option>
+                            <option>12th</option>
+                        </select>
+
+
+                        <br>
+                        <br>
+                        <!--Enroll course for-->
+                        <legend style="font-size:2em; font-family: 'Times New Roman', Times, serif;">Enroll course
+                            for </legend>
+
+                        <label class="lable-style">B.E</label>
+                        <input type="radio" class="text-about" value="B.E" name="two" />
+                        <label class="lable-style">B.Tech</label>
+                        <input type="radio" class="text-about" value="B.Tech" name="two" />
+
+
+                        <br>
+                        <br>
+                        
+                        <!--Submit-->
+                        <button
+                            style=" text-align: center; font-size:2em; font-family: 'Times New Roman', Times, serif; margin-left:43%;  background-color: rgb(4, 115, 110);">Submit</button>
+
+                        <br>
+                        <br>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </fieldset>
+
+</body>
+
+</html>

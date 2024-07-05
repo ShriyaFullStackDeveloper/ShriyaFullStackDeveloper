@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: "Poppins", sans-serif;
+        line-height: 1.6;
+        color: white;
+
+    }
+
+    table {
+        width: 100vw;
+        height: 100vh;
+        border-collapse: collapse;
+        border: 1px solid black;
+        background-color: black;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+       
+    }
+
+    
+
+    .row-one {
+        width: 100%;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 52px;
+        color: white;
+        margin-right: 1%;
+    }
+
+    h2 {
+        font-size: 42px;
+        margin-right: 10px;
+        margin-top: 3%;
+        margin-right: 50%;
+        color: white;
+    }
+.name{
+    font-size: 52px;
+        color:#FFC700;
+       
+}
+
+    span {
+        color: #FFC700;
+        font-size: 52px;
+    }
+
+    p {
+        color: white;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .columns {
+        width: 25vw;
+        font-size: 22px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #FFC700;
+    }
+
+    .tH1 {
+        margin-bottom: 70%;
+        margin-left: 70%;
+        color: #FFC700;
+    }
+
+    .tH2 {
+        margin-top: -10%;
+        margin-right: 100%;
+    }
+
+    .about {
+        color: #FFC700;
+        font-size: 62px;
+        background-color: black;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .education {
+        color: white;
+        font-size: 52px;
+        margin-left: 3%;
+        font-family: "Poppins", sans-serif;
+        margin-bottom: 5%;
+    }
+
+    li {
+        color: white;
+        font-size: 32px;
+        margin-left: 2%;
+    }
+
+    span {
+        color: #FFC700;
+        font-size: 32px;
+    }
+
+    .table2 {
+        height: 90vh;
+        width: 100vw;
+        background-color: black;
+    }
+    button{
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+    }
+    .contact{
+        margin-bottom: 40%;
+    }
+    .skills{
+        margin-bottom: 11%;
+    }
+    .ul{
+       margin-left: 40%;
+  margin-top: -10%;
+    }
+    .fullname{
+        font-size: 35px;
+    }
+    
+</style>
+
+<body>
+    <table>
+        <tr class="row-one">
+            <th class="columns fullname"> <a href="#">Shriya Gadhawe</a></th>
+            <th class="columns"> <a href="#home">Home</a></th>
+            <th class="columns"> <a href="#about">About</a></th>
+            <th class="columns"> <a href="#skills">Skills</a></th>
+            <th class="columns"> <a href="#contact">Contact</a></th>
+        </tr>
+        <tr >
+            <th class="home" colspan="3" id="home">
+                <h2>Hello,</h2>
+                <h1>I'm <span class="name">Shriya Gadhawe</span></h1>
+                <p>This is my official portfolio website to showcase all my works</p>
+                <br>
+                <br>
+                <button style=" font-size:22px; background-color:black; color: white; border:1px solid white;
+                 ">Contact me</button>
+
+            </th>
+
+        </tr>
+    </table>
+
+
+    <table style=" height:80vh; width: 100vw;">
+        <td id="about">
+            <div style="margin-bottom: 5%;" class="about">About</div>
+            <div class="education">Education</div>
+            <ul>
+                <li>Nursory to 1st standard -  &emsp;<span>D.A.V Public School, Yole, Himachal Pradesh</span></li>
+                <li>Standard 1st to 4th &emsp;&emsp;-  &emsp;<span>Army Primary School, Nowgoan, Madhya Pradesh</span></li>
+                <li>Standard 5th to 10th &emsp;-  &emsp;<span>Mount Carmel Convent School, Katol, Mahrashtra</span></li>
+                <li>Standard 11th to 12th &emsp;-  &emsp;<span>Arvind Indo Public School, Katol, Mahrashtra</span></li>
+            </ul>
+        </tr>
+    </table>
+    <table style="height:50vh; width: 100vw;">
+        <tr>
+            <td  id="skills">
+                <div class="about skills">Skills</div>
+                <ul class="ul">
+                    <li> &emsp;&emsp;HTML</li>
+                    <li>&emsp;&emsp;CSS</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <table style="height:50vh; width: 100vw;">
+        <tr>
+            <td id="contact">
+                <div  class="about contact ">Contact me</div>
+                
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

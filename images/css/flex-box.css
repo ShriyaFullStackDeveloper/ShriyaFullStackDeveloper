@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    flex-direction: row;
+flex-wrap: wrap;
+align-items: flex-end;
+justify-content: space-between;
+background-color:#071952 ;
+width:100vw ;
+height:100vh ;
+gap: 10px;
+
+}
+.first-box{
+width: 20%;
+height: 20%;
+background-color:#088395 ;
+margin: 20px;
+}
+.second-box{
+    width: 20%;
+    height: 20%;
+    background-color:#37B7C3;
+}
+.third-box{
+    width: 20%;
+    height: 20%;
+    background-color: rgb(179, 8, 8);
+}
+

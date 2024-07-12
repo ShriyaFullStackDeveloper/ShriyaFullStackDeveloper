@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .main {
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        font-family: "Poppins", sans-serif;
+        width: 100vw;
+        height: 100vh;
+        background: url(./Assets/images/backg1.jpg);
+    }
+
+    ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 10px 16px;
+    }
+
+    ul li a {
+        font-size: 32px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #E4003A;
+        margin-top: -3%;
+        transition: 0.5s ease;
+    }
+
+    ul li a:hover {
+        color: rgb(232, 222, 222);
+    }
+
+    .navbar {
+        margin-left: 55%;
+    }
+
+    .portfolio li {
+        font-size: 32px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #E4003A;
+    }
+
+    .info {
+        margin-left: 7%;
+        margin-top: 12%;
+    }
+
+    .info h1 {
+        font-size: 65px;
+        color: white;
+    }
+
+    .info h3 {
+        font-size: 24px;
+        letter-spacing: 1px;
+        line-height: 24px;
+        color: white;
+    }
+
+    .info span {
+        color: #eb7391;
+    }
+
+    .button {
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        display: inline-block;
+        transition: 0.5s ease;
+        border: 2px solid white;
+        margin-left: 5%;
+        color: black;
+        background-color: #E4003A;
+        box-shadow: 0 0 white,
+            inset 0 0 4rem white,
+            0 0 2rem #E4003A,
+    }
+
+    .info .button:hover {
+        color: #18a4d7;
+        background-color: transparent;
+    }
+
+    .image {
+        width: 30%;
+        height: 60%;
+        position: absolute;
+        right: 100px;
+        bottom: 0;
+    }
+
+    .image img {
+        position: absolute;
+        height: 140%;
+        left: 40%;
+        transform: translate(-50%);
+        bottom: 0;
+        transition: left 4s ease;
+    }
+
+    .image:hover .me {
+        left: 55%;
+    }
+
+    h2 {
+        color: white;
+        margin-right: 20%;
+    }
+
+    .sec-main {
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        font-family: "Poppins", sans-serif;
+        width: 100vw;
+        height: 100vh;
+        background: url(./Assets/images/background.jpg);
+    }
+
+    .sec-main h1 {
+        font-size: 52px;
+        color: white;
+    }
+
+    .sec-main span {
+        color: #E4003A;
+        font-size: 52px;
+    }
+
+    .education {
+        width: 100%;
+        height: 100%;
+        background: transparent;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .education-one {
+        width: 40%;
+        height: 90%;
+        background: transparent;
+    }
+
+    .education-two {
+        width: 40%;
+        height: 90%;
+        background: transparent;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .education-two-one {
+        width: 100%;
+        height: 40%;
+        background: transparent;
+    }
+
+    .education-two-one h1 {
+        color: #4aacdd;
+        font-size: 22px;
+        line-height: 1.6;
+        padding: 10px;
+    }
+
+    .education-two-one span {
+        color: #e77390;
+        font-size: 22px;
+    }
+
+    .education-two-two {
+        width: 100%;
+        height: 40%;
+        background: transparent;
+        margin-bottom: 10%;
+        box-shadow:
+            0 0 white,
+            inset 0 0 4rem white,
+            0 0 2rem #E4003A,
+    }
+
+    .education-two-two h2 {
+        color: #E4003A;
+        font-size: 22px;
+        margin-left: 3%;
+        line-height: 1.6;
+        padding: 10px;
+    }
+
+    .education-two-two ul li {
+        color: rgb(83, 215, 197);
+        font-size: 19px;
+    }
+
+    .education-two-two span {
+        color: #7fc3e8;
+        font-size: 19px;
+    }
+
+    .third-main {
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        font-family: "Poppins", sans-serif;
+        width: 100vw;
+        height: 100vh;
+        background: url(./Assets/images/backg1.jpg);
+    }
+
+    .third-main h1 {
+        color: #E4003A;
+        font-size: 52px;
+    }
+
+    .third-div {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        height: 40%;
+        justify-content: space-between;
+        margin-left: 23.5%;
+        padding: 15px;
+    }
+
+    .third-div .third-one .third-two {
+        aspect-ratio: 1;
+        position: absolute;
+        border-radius: 50%;
+        top: 30%;
+        margin-left: 5%;
+        transform: translate(-50% -50%);
+    }
+
+    .third-div p {
+        color: #1cabee;
+        line-height: 1.2;
+    }
+
+    .third-one {
+        width: 40%;
+        height: 70%;
+        border: 2px solid white;
+        background-color: transparent;
+        padding: 8px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        box-shadow:
+            0 0 1rem white,
+            0 0 2rem #1cabee,
+            inset 0 0 2rem #1cabee,
+            0 0 2rem #1cabee;
+    }
+
+    .third-two {
+        width: 40%;
+        height: 70%;
+        border: 2px solid white;
+        background-color: transparent;
+        padding: 8px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        box-shadow:
+            0 0 1rem white,
+            0 0 2rem #1cabee,
+            inset 0 0 2rem #1cabee,
+            0 0 2rem #1cabee;
+    }
+
+    .third-div-two {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 30%;
+        background-color: transparent;
+        aspect-ratio: 1;
+        position: absolute;
+        margin-bottom: 10%;
+        transform: translate(-50% -50%);
+    }
+
+    .third-div-two-one {
+        align-items: center;
+        justify-content: center;
+
+        width: 10%;
+        height: 82%;
+        padding: 4px;
+        margin-left: 5%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        box-shadow:
+            0 0 1rem white,
+            0 0 2rem #1cabee,
+            inset 0 0 2rem #1cabee,
+            0 0 2rem #1cabee;
+
+    }
+
+    .third-div-two-two {
+        align-items: center;
+        justify-content: center;
+        width: 10%;
+        height: 82%;
+        padding: 4px;
+        margin-left: 5%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        box-shadow:
+            0 0 1rem white,
+            0 0 2rem #1cabee,
+            inset 0 0 2rem #1cabee,
+            0 0 2rem #1cabee;
+    }
+
+    .third-div-two-three {
+        align-items: center;
+        justify-content: center;
+        width: 10%;
+        height: 82%;
+        padding: 4px;
+        margin-left: 5%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        box-shadow:
+            0 0 1rem white,
+
+            0 0 2rem #1cabee,
+            inset 0 0 2rem #1cabee,
+            0 0 2rem #1cabee;
+    }
+
+    .third-div-two-four {
+        align-items: center;
+        justify-content: center;
+
+        width: 10%;
+        height: 82%;
+        padding: 4px;
+        margin-left: 5%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        box-shadow:
+            0 0 1rem white,
+
+            0 0 2rem #1cabee,
+            inset 0 0 2rem #1cabee,
+            0 0 2rem #1cabee;
+    }
+
+    .fourth-main {
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        font-family: "Poppins", sans-serif;
+        width: 100vw;
+        height: 100vh;
+        background: url(./Assets/images/background.jpg);
+    }
+
+    .social-links {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 30%;
+        background-color: transparent;
+    }
+
+    .social-links-one {
+        align-items: center;
+        justify-content: center;
+        width: 10%;
+        height: 80%;
+        padding: 4px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-links-one i {
+        font-size: 55px;
+        color: white;
+    }
+
+    .social-links-two {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50%;
+        width: 100%;
+        height: 40%;
+        padding: 10px;
+    }
+
+    .social-links-two a {
+        font-size: 55px;
+        color: white;
+        margin-right: 20px;
+        margin-bottom: 30%;
+        margin-top: 5%;
+        display: inline-block;
+        margin: 0 10px;
+        transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        text-decoration: none;
+    }
+
+    .social-links-two a:hover {
+        transform: scale(1.2);
+    }
+
+    .social-links-two a i {
+        font-size: 44px;
+        color: #18a4d7;
+    }
+
+    .social-links-two a:hover i {
+        color: #E4003A;
+        margin-left: 40px;
+    }
+
+    .social-links-two i {
+        color: #1cabee;
+        margin-left: 40px;
+    }
+
+    .design .circle {
+        aspect-ratio: 1;
+        position: absolute;
+        border-radius: 50%;
+        top: 30%;
+        margin-left: 5%;
+        transform: translate(-50% -50%);
+    }
+
+    .circle:nth-child(1) {
+        background: linear-gradient(transparent 50%, );
+        width: 30rem;
+    }
+
+    .circle:nth-child(2) {
+        width: 25rem;
+        background-color: black;
+        background-image: url(./Assets/images/me21.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        box-shadow:
+            0 0 1rem white,
+            inset 0 0 2rem white,
+            0 0 2rem #1cabee,
+            inset 0 0 2rem #1cabee,
+            0 0 2rem #1cabee;
+    }
+</style>
+
+<body>
+    <!--first page-->
+    <div class="main">
+        <!--links-->
+        <div class="navbar">
+
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#section-four">CONTACT</a></li>
+            </ul>
+        </div>
+        <!--info-->
+        <div class="info" id="home">
+            <h3>Hello!</h3>
+            <br>
+            <br>
+            <h1>I'm <span>Shriya Gadhawe</span>
+                <br>
+                <h3><i>This is my official portfolio website to showcase
+                        <pre>all my works.</pre>
+                    </i></h3>
+                <br>
+                <a href="#section-four"> <button class="button"
+                        style=" font-size:22px; color: white; border:1px solid #e77390;">Contact me</button>
+                </a>
+        </div>
+        <!--first-image-->
+        <div class="image" id="home">
+            <img src="./Assets/images/me.jpg" class="me">
+        </div>
+    </div>
+    <!--second-page-->
+    <div class="sec-main" id="about">
+        <br>
+        <br><br>
+        <!--about me-->
+        <h1 style="margin-left: 60%;">About <span>Me</span></h1>
+
+
+        <div class="education">
+
+            <div class="education-one">
+                <!--second-image-->
+                <div class="design">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <br>
+            <div class="education-two">
+                <!--intro-->
+                <div class="education-two-one">
+                    <h1>I'm <span>Shriya Gadhawe</span>. I have experience with HTML and CSS. I am continuing to develop
+                        my skills and contribute to innovative projects. I'm looking forward to learning and connecting
+                        with all of you.</h1>
+                </div>
+                <!--educaton-->
+                <div class="education-two-two">
+                    <h2>Education</h2>
+                    <ul>
+                        <li>Nursory to 1st standard - &emsp;<span>D.A.V Public School, Yole, Himachal Pradesh</span>
+                        </li>
+                        <br>
+                        <li>Standard 1st to 4th &emsp;&emsp;&emsp;&emsp;&emsp;
+                            - &emsp;<span>Army Primary School, Nowgoan, Madhya Pradesh</span>
+                        </li>
+                        <br>
+                        <li>Standard 5th to 10th &emsp;&emsp;&emsp;&emsp;- &emsp;<span>Mount Carmel Convent School,
+                                Katol,
+                                Mahrashtra</span></li><br>
+                        <li>Standard 11th to 12th &emsp;&emsp;- &emsp;<span>Arvind Indo Public School, Katol,
+                                Mahrashtra</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--third-page-->
+    <div class="third-main" id="skills">
+        <br>
+        <!--skills-->
+        <h1 style="margin-left: 45%;">Skills</h1>
+        <br><br>
+        <div class="third-div">
+
+            <div class="third-one">
+                <br>
+                <h2 style="color: #E4003A; text-align: center;">HTML</h2>
+                <br>
+                <p>HyperText Markup Language (HTML) is the standard markup language for documents designed to be
+                    displayed in a web browser. <br>It defines the content and structure of web content. It is often
+                    assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as
+                    JavaScript.</p>
+            </div>
+            <div class="third-two">
+                <br>
+                <h2 style="color: #E4003A; text-align: center;">CSS</h2>
+                <br>
+                <p>Cascading Style Sheets (CSS) is a style sheet language used for specifying the presentation and
+                    styling of a document written in a markup language such as HTML or XML (including XML dialects such
+                    as SVG, MathML or XHTML). <br> CSS is a cornerstone technology of the World Wide Web, alongside HTML
+                    and JavaScript.</p>
+            </div>
+        </div>
+        <!--project-->
+        <h1 style="color: #E4003A; text-align: center;">MY PROJECTS</h1>
+        <br><br>
+        <!--projects links-->
+        <div class="third-div-two">
+
+            <div class="third-div-two-one">
+                <a href="../Myhtmlpage/admission.html"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPZIq1CQXl8uDT0rLqxfU78_1AHtrs6Iii6w&s"
+                        width="95%" height="75%%" alt="form"></a>
+                <h3 style=" color: #7fc3e8;">Application Form</h3>
+            </div>
+            <div class="third-div-two-two">
+                <a href="../Myhtmlpage/assets/css/indiaflag.html"><img
+                        src="https://img.etimg.com/thumb/width-420,height-315,imgsize-11438,resizemode-75,msid-102726945/news/new-updates/independence-day-2023-heres-what-you-need-to-know-about-history-significance-of-indian-flag/har-ghar-tiranga-abhiyan-2-0-commences-tricolour-available-at-post-offices-and-online-at-rs-25.jpg"
+                        width="95%" height="78%" alt="form"></a>
+                <h3 style=" color: #7fc3e8;">Flag</h3>
+            </div>
+            <div class="third-div-two-three"> <a href="../Myhtmlpage/secondlayout.html"><img
+                        src="https://miro.medium.com/v2/resize:fit:1400/0*C8W3aR9H66rcj7Ml" width="95%" height="78%">
+                </a>
+                <h3 style=" color: #7fc3e8;">Layouts</h3>
+            </div>
+            <div class="third-div-two-four"><a href="../resume3.html"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyciiD-MW6C4TvhLqYQOCFLXVA5JU73ddKzA&s"
+                        width="95%" height="80%" alt="form"></a>
+                <h3 style=" color: #7fc3e8;">Resume</h3>
+            </div>
+        </div>
+    </div>
+    <!--fourth-page-->
+    <div id="section-four" class="fourth-main">
+        <br><br>
+        <!--contact details-->
+        <h1 style="color: #E4003A; font-size: 52px; text-align: center;">Contact <span>Me</span> </h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!--social-links-two-->
+        <div class="social-links">
+            <div class="social-links-one">
+                <i style="color: #1cabee;" class='bx bxs-location-plus'></i>
+                <ul style="font-size: 22px; color: #1cabee;">
+                    <li>Katol,<br>Nagpur, <br>Mahrashtra</li>
+                </ul>
+
+            </div>
+            <div class="social-links-one">
+                <i style="color: #1cabee;" class='bx bxs-phone'>
+                    <ul style="font-size: 22px; color: #1cabee;">
+                        <li>+91 9322093762</li>
+                        <li>+91 93220XXXXX</li>
+                    </ul>
+                </i>
+            </div>
+            <div class="social-links-one">
+                <i style="color: #1cabee;" class='bx bxs-envelope'>
+                    <ul style="font-size: 22px; color: #1cabee;">
+                        <mailto:li>shriyagadhawe9910@gmail.com</li>
+                    </ul>
+                </i>
+            </div>
+        </div>
+        <br>
+        <h3 style="color: #4b4345; font-size: 32px; text-align: center;">Also</h3>
+        <h1 style="color: #E4003A; font-size: 52px; text-align: center;">Get in touch </h1><br><br>
+        <!--social-links-two-->
+        <div class="social-links-two">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .another-name {
+            background-color: red;
+            border-style: dotted;
+            border-width: 5px;
+        }
+
+        .name {
+            color: orange;
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 32px;
+        }
+
+        #profession {
+            font-size: 32px;
+            color: green;
+        }
+
+        p[draggable] {
+            color: #3FA2F6;
+        }
+
+        * {
+            background-color: aqua;
+        }
+
+        p:hover {
+            color: orangered;
+        }
+    </style>
+</head>
+
+<body>
+    <p>My Name is <span class="name another-name" style="color:pink;">Shriya</span></p>
+    <p>I am <span id="profession">Student</span></p>
+    <p draggable="true">I am <span id="profession">Student</span></p>
+
+</body>
+
+</html>

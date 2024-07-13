@@ -1,69 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
+
+
     <style>
-        body{
-            height: 100vh;
-            width: 100vw;
-            background-color:#83B4FF;
+        table {
+            border-collapse: collapse;
+            width: 95%;
+
         }
-       
-            caption {
-                font-size: 30px;
-            font-style: normal;
-            margin-bottom: 10px;
+        tr:nth-child(even) {
+  background-color: #dddddd;
+}
+th:nth-child(odd) {
+  background-color:white;
+}
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #DDD;
+            border: 1px solid black;
         }
-        a{
-            margin-left: 5%;
+
+        tr:hover {
+            background-color: #D6EEEE;
         }
-           
+
+        caption {
+        font-size: 30px;
+        font-style: normal;
+        margin-bottom: 10px;
+    }
     </style>
 </head>
 
 <body>
-    <caption> LAYOUTS:</caption>
-    <br>
-        <a href="firstlayout.html">First Layout</a>
-    <br>
-    <a href="secondlayout.html">Second Layout</a>
-    <br>
-    <a href="thirdlayout.html">Third Layout</a>
- <br>
- <a href="doublebox.html">Fourth Layout</a>
- <br>
- <caption>FORM:</caption>
- <br>
- <a href="admission.html">Admission Form</a>
-<br>
- <a href="indiaflag.html">India flag</a>
-    <br>
-    <a href="usa.html"> USA flag</a>
-    <br>
-    <br>
-    <caption>flex layouts</caption> <br>
-    <a href="flex2.html">first</a>
-    <br>
-    <a href="flex3.html">second</a>
-    <br>
-    <a href="flex4.html">third</a>
-    <br>
-    <a href="resume3.html">Resume</a>
-    <br>
-    <caption>PORTFOLIO</caption> <br>
-    <a href="porfolio_2.html">PORTFOLIO 1<sup>st</sup></a>
-    <br>
-    <a href="portfolio_first.html">PORTFOLIO 2<sup>nd</sup></a>
-    <br>
-    <caption>CHESS</caption> <br>
-    <a href="Chess.html">CHESS</a>
-    <br>
-    <a href="media1.html">Media</a>
-    <br>
+    <table>
+        <caption>PROJECTS</caption>
+        <tr>
+            <th rowspan="3">LAYOUTS</th>
+            <td><a href="firstlayout.html">First Layout</a>
+                
+                </td>
+
+        </tr>
+        <tr>
+            <td><a href="secondlayout.html">Second Layout</a></td>
+        </tr>
+        <tr>
+            <td><a href="thirdlayout.html">Third Layout</a></td>
+        </tr>
+        <tr>
+            <th rowspan="2">FORM</th>
+            <td ><a href="admission.html">Admission Form</a>
+               
+               </td>
+        </tr>
+        <tr>
+            <td> <a href="resume3.html">Resume</a></td>
+        </tr>
+        <tr>
+            <th rowspan="2">FLAGS</th>
+            <td> <a href="indiaflag.html">India flag</a>
+               </td>
+
+        </tr>
+        <tr>
+            <td><a href="usa.html"> USA flag</a></td>
+        </tr>
+        <tr>
+            <th rowspan="4">FLEX LAYOUTS</th>
+            <td><a href="flex2.html">First</a>
+                </td>
+        </tr>
+        <tr>
+            <td><a href="flex3.html">Second</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="flex4.html">Third</a></td>
+        </tr>
+        <tr>
+            <td><a href="doublebox.html">Fourth </a></td>
+        </tr>
+        <tr>
+            <th rowspan="2">PORTFOLIO</th>
+            <td> <a href="porfolio_2.html">PORTFOLIO 1<sup>st</sup></a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="portfolio_first.html">PORTFOLIO 2<sup>nd</sup></a></td>
+        </tr>
+        <tr>
+            <th rowspan="3">OTHERS</th>
+            <td> <a href="Chess.html">Chess</a>
+               </td>
+        </tr>
+        <tr>
+            <td> <a href="mediaquerry.html">Media</a></td>
+        </tr>
+        <tr>
+            <td> <a href="iframe.html">iframe</a></td>
+        </tr>
+    </table>
+
 </body>
+
 </html>
+
+
+
+
+<style>
+   

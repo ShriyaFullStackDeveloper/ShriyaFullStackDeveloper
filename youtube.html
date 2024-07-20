@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            padding: 15px;
+        }
+
+        main {
+            display: flex;
+
+            background-color: #f9f9f9;
+        }
+
+        .side-bar {
+            height: 100%;
+            width: 17%;
+            background-color: white;
+            overflow-y: hidden;
+        }
+        form input{
+            width: 50vw;
+            border-radius: 20px;
+
+        }
+        button{
+            width: 5%;
+            height: 15%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="./Assets/images/youtube.png" height="20px" alt="youtube">
+            </div>
+            <div class="search">
+                <form>
+                    <input type="text" placeholder="Search" />
+                    <button><i class="fa-regular fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <div class="side-bar"></div>
+        <div class="content"></div>
+
+    </main>
+</body>
+
+</html>

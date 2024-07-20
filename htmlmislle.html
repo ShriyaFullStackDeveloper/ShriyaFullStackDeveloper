@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            border: 1px solid black;
+            width: 100vw;
+            height: 100vh;
+            background-color: white;
+        }
+
+        .firstbox {
+            width: 25vw;
+            height: 100vh;
+            border: 1px solid black;
+
+        }
+
+        .secondbox {
+            width: 25vw;
+            height: 100vh;
+
+            border: 1px solid black;
+        }
+
+        .thirdbox {
+            width: 25vw;
+            height: 100vh;
+            border: 1px solid black;
+
+        }
+
+        .fourthbox {
+            width: 25vw;
+            height: 100vh;
+
+        }
+
+        .one {
+            width: 100%;
+            height: 33%;
+            display: flex;
+            flex-direction: column;
+
+            border: 1px solid black;
+        }
+
+        .two {
+            width: 100%;
+            height: 33%;
+            display: flex;
+            flex-direction: column;
+
+            border: 1px solid black;
+        }
+
+        .three {
+            width: 100%;
+            height: 33%;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+        }
+
+        .fourth {
+            width: 100%;
+            height: 33%;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+        }
+
+        .external {
+            width: 350px;
+            height: 290px;
+
+        }
+
+        .audio-player {
+            width: 350px;
+            height: 220px;
+
+        }
+
+        table {
+            width: 350px;
+            height: 200px;
+            background-color: #7469B6;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+
+        caption {
+            font-size: 30px;
+            font-style: normal;
+            margin-bottom: 10px;
+        }
+
+        span {
+            color: #7469B6;
+        }
+
+        #profession {
+            font-size: 32px;
+            color: green;
+        }
+
+        p[draggable] {
+            color: #3FA2F6;
+        }
+
+        p:hover {
+            color: orangered;
+        }
+
+        p {
+            font-size: 32px;
+        }
+
+        .second-heading {
+            color: red;
+            text-align: center;
+            border-style: double;
+            border-width: 6px;
+        }
+
+        .lable-style {
+
+            font-family: 'Times New Roman', Times, serif;
+            font-optical-sizing: auto;
+            width: 70px;
+            min-height: auto;
+            margin-top: 4%;
+            margin-left: 5px;
+        }
+
+        .text-about {
+            font-size: 1em;
+            color: black;
+            height: 30px;
+            width: 200px;
+            margin: 0%;
+            margin-top: 3%;
+        }
+
+        .input_box {
+            width: 22px;
+            height: 22px;
+            margin-top: 4%;
+            background-color: blue;
+        }
+
+        .second-heading {
+            color: red;
+            text-align: center;
+            border-style: double;
+            border-width: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--main-->
+    <div class="container">
+        <!--main-1-->
+        <div class="firstbox">
+            <!--div-->
+            <div class="one">
+                <h1 style="margin-left:5%;">Heading</h1><br>
+
+            </div>
+            <div class="two">
+                <p style="margin-left:5%;">Paragraph</p>
+            </div>
+            <div class="three">
+                <img src="images/Dog.webp" height="200px" width="200px" alt="dog">
+            </div>
+            <div class="fourth">
+                <a style="margin-left:5%;" href="../Myhtmlpage/firstlayout.html">First layout</a>
+            </div>
+        </div>
+        <!--main-2-->
+        <div class="secondbox">
+            <!--list-->
+            <div class="one">
+                <ul>
+                    <li>one</li>
+                    <li>two</li>
+                </ul>
+                <ol>
+                    <li>one</li>
+                    <li>two</li>
+                </ol>
+            </div>
+            <div class="two">
+                <!--table-->
+                <table>
+
+                    <tr>
+                        <td style="background-color: lightcoral;" colspan="4"></td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="background-color: lightgray;" colspan="1"></td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="background-color: lightgreen;" colspan="4"></td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="background-color:#A0DEFF;"></td>
+                        <td style="background-color:#b2b9d5;"></td>
+                        <td style="background-color:#FFB4C2;"></td>
+                        <td style="background-color: #81A263;"></td>
+                    </tr>
+                    </tr>
+                </table>
+            </div>
+            <!--iframe-->
+            <div class="three">
+                <iframe class="external" src="../Myhtmlpage/assets/css/mis-tags.html"></iframe>
+            </div>
+            <!--audio-->
+            <div class="fourth">
+                <audio class="audio-player" src="../Myhtmlpage/assets/audio/audio.mp3" controls></audio>
+            </div>
+        </div>
+        <!--main-3-->
+        <div class="thirdbox">
+            <!--div-->
+            <div class="one">
+                <!--video-->
+                <video class="audio-player" src="video/video.mp4" controls></video>
+            </div>
+            <div class="two">
+                <caption style="margin-left:10px;"> Welcome</caption>
+            </div>
+            <div class="three">
+                <h1>I'm <span>Shriya</span></h1>
+            </div>
+            <div class="fourth">
+                <p draggable="true">I am <span id="profession">Student</span></p>
+            </div>
+        </div>
+        <!--main-4-->
+        <div class="fourthbox">
+            <!--div-->
+            <div class="one">
+                <h2 class="second-heading">Welcome to Enjoy pragramming</h2>
+            </div>
+            <div class="two">
+                <label class="lable-style"> Student Name: </label>
+                <input type="text" class="text-about" />
+            </div>
+            <div class="three">
+                <!--radio-->
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <label class="lable-style">Gender:</label>
+
+                <label class="lable-style">Male</label>
+                <input type="radio" class="input_box" value="Male" name="two" />&emsp;
+                <label class="lable-style">Female</label>
+                <input type="radio" class="input_box" value="Femlale" name="two" />
+            </div>
+            <div class="fourth">
+                <!--select-->
+                <label for="country" class="lable-style">Country:</label>&emsp;
+                <select id="country" class="text-about">
+                    <option>India</option>
+                    <option>Japan</option>
+                    <option>Nepal</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
